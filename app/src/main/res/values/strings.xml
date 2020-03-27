@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">userCovid</string>
+    <string name="fitur_ini_berisikan_beberapa_daftar_pertanyaan_untuk_mengecek_kondisi_fisik_anda">Fitur ini berisikan beberapa daftar pertanyaan untuk mengecek kondisi fisik anda</string>
+    <string name="ya">YA</string>
+    <string name="tidak">TIDAK</string>
+    <string name="_1_apakah_anda_mengalami_salah_satu_dari_yang_berikut">1. Apakah Anda mengalami salah satu dari yang berikut:</string>
+    <string name="belum">Belum</string>
+    <string name="sudah">Sudah</string>
+    <string name="data_yang_saya_kirim_sudah_benar_dan_saya_bertanggung_jawab_atas_data_yang_anda_kirimkan">Data yang saya kirim sudah benar dan saya bertanggung jawab atas data yang anda kirimkan</string>
+    <string name="sudah_berapa_hari">Sudah Berapa Hari ?</string>
+    <string name="hari">Hari</string>
+    <string name="sudah_berobat_kerumah_sakit">Sudah berobat kerumah sakit ?</string>
+</resources>
