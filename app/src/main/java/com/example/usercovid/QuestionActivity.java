@@ -12,11 +12,9 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
 
     private TextView question;
     private TextView subQuestion;
-    private Button btnYes;
-    private Button btnNo;
     private int number = 0;
 
-    public String questions [] = new String[]{
+    public String[] questions = new String[]{
             "1. Apakah Anda mengalami salah satu dari yang berikut:",
             "2. Apakah Anda mengalami salah satu dari yang berikut:",
             "3. Apakah Anda mengalami salah satu dari yang berikut:",
@@ -24,7 +22,7 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
             "5. Apakah Anda memberikan perawatan atau melakukan kontak dekat dengan seseorang dengan COVID-19 (kemungkinan atau dikonfirmasi) saat mereka sakit (batuk, demam, bersin, atau sakit tenggorokan)?"
     };
 
-    private String subsQuestions [] = new String[] {
+    private String[] subsQuestions = new String[] {
             "-Nyeri dada yang parah\n-Sulit untuk bangun\n-Merasa kebingungan\n-Penurunan kesadaran",
             "-Nafas yang pendek saat istirahat\n-Ketidakmampuan untuk berbaring karena kesulitan bernafas\n-Kondisi kesehatan kronis yang anda alami dirasakan lebih berat karena kesulitan bernapas",
             "-Demam\n-Batuk\n-Bersin\n-Sakit Tenggorokan\n-Sulit Bernafas",
@@ -37,8 +35,8 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question);
         question = findViewById(R.id.tv_question);
-        btnYes = findViewById(R.id.btnYes);
-        btnNo = findViewById(R.id.btnNo);
+        Button btnYes = findViewById(R.id.btnYes);
+        Button btnNo = findViewById(R.id.btnNo);
         subQuestion = findViewById(R.id.tv_sub_question);
         question.setText(questions[number]);
         subQuestion.setText(subsQuestions[number]);
@@ -60,7 +58,6 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
                         number++;
                         question.setText(questions[number]);
                         subQuestion.setText(subsQuestions[number]);
-                    }else{
                     }
                 }catch (Exception e){
                     startActivity(new Intent(QuestionActivity.this,ResultActivity.class));
